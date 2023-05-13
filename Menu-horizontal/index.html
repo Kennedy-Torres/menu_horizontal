@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+
+    <style>
+        body{
+            margin: 0 auto; /*Centralizacao, o site fica sem borda nenhuma*/
+            padding: 0; /*todos os elementos teram padding zero, sendo necessario especificar cada um*/
+            box-sizing: border-box; /*reduz a quebra de layout, faz o incremento...*/
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        #menu-h{
+            list-style-type: none; /*Retira todos os bullets*/
+            padding: 0;
+            background-color: rgb(28, 33, 78);
+        }
+
+        #menu-h li{
+            display: inline;/*Ficam um ao lado do outro*/
+            padding: 30px;
+        }
+
+        #menu-h li a{ /*para cada link*/
+            color: #fff;
+            padding: 20px; /*espacamento entre as letras*/
+            display: inline-block;
+            text-decoration: none; /*retira as decoracoes... no caso aqui... os underline*/
+            transition: background .4s;
+        }
+
+        #menu-h li a:hover{
+            background-color: blue;
+        }
+
+        #menu-h li:last-child a{
+            float: right;
+            background-color: rgb(45, 55, 201);
+        }
+
+    </style>
+</head>
+
+
+
+<body>
+
+    <ul id="menu-h"> <!--com o ID eu posso especificar com qual eu elemento eu posso trabalhar-->
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">SOBRE</a></li>
+        <li><a href="#">PROJETOS</a></li>
+        <li><a href="#">CONTATO</a></li>
+        <li><a href="#">ENTRAR</a></li>
+
+    </ul>
+
+
+
+
+
+    
+</body>
+
+
+
+
+
+
+
+
+</html>
